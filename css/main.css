@@ -50,6 +50,7 @@ body {
   color: #98a6bd;
   line-height: 1.6rem;
   font-size: 0.827rem;
+  padding-bottom: 7px;
 }
 
 .offer {
@@ -128,7 +129,7 @@ footer {
   padding: 25px;
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 660px) {
   * {
     margin: 0 !important;
   }
@@ -137,31 +138,53 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 100px 370px !important;
+    max-width: 660px;
+    padding-bottom: 20px;
   }
   .main-container .boxes {
-    padding: 35px;
+    padding: 35px 30px 35px 35px;
   }
   .header {
     grid-area: 1/1/2/3;
-    padding: 40px 45px 0 !important;
-    justify-self: stretch;
+    padding: 35px 75px 35px 35px !important;
+    align-self: flex-end;
+    row-gap: 10px;
+    border-radius: 7px;
   }
   .header .header-title {
     color: #2ab2af;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.37rem;
     padding-bottom: 10px;
   }
   .header .header-subtitle {
     color: #c0df34;
-    font-size: 0.945rem;
+    font-size: 1.075rem;
     line-height: 1.25rem;
   }
   .header .header-text {
     color: #98a6bd;
     line-height: 1.6rem;
-    font-size: 0.827rem;
+    font-size: 0.91rem;
+  }
+  .offer {
+    border-radius: 0 0 0 7px;
+  }
+  .offer .offer-title {
+    font-weight: 700;
+  }
+  .offer .sign-up-button:hover {
+    box-shadow: 0 0 2px -1px black;
+    transform: translatey(-5px);
+  }
+  .offer .sign-up-button:hover .sign-up-button-text {
+    font-size: 1.1rem;
+  }
+  .why-us {
+    border-radius: 0 0 7px 0;
+  }
+  .why-us .reasons {
+    font-size: 0.78rem;
   }
   footer {
     padding: 0;
