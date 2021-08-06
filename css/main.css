@@ -5,20 +5,21 @@
 }
 
 body {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   background-color: #e5eff5;
   padding: 0;
   margin: 0;
+  height: 170vh;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 75px 35px 0;
-  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 5px -3px black;
+  max-width: 320px;
 }
 
 .main-container .boxes {
@@ -122,23 +123,21 @@ body {
 }
 
 footer {
+  position: relative;
   text-align: center;
   font-weight: 700;
-  padding: 25px;
+  bottom: 30px;
 }
 
-@media screen and (min-width: 660px) {
-  * {
-    margin: 0 !important;
-  }
+@media screen and (min-width: 595px) {
   body {
     height: 100vh;
   }
   .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-width: 660px;
+    grid-template-rows: auto auto;
+    max-width: 600px;
   }
   .main-container .boxes {
     padding: 35px 30px 35px 35px;
@@ -146,9 +145,8 @@ footer {
   .header {
     grid-area: 1/1/2/3;
     padding: 35px 75px 35px 35px !important;
-    align-self: flex-end;
     row-gap: 10px;
-    border-radius: 7px;
+    border-radius: 7px 7px 0 0;
   }
   .header .header-title {
     color: #2ab2af;
@@ -186,7 +184,8 @@ footer {
     font-size: 0.78rem;
   }
   footer {
-    padding-top: 25px;
+    position: absolute;
+    align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
