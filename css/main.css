@@ -1,0 +1,170 @@
+* {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e5eff5;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 75px 35px 0;
+  max-width: 400px;
+}
+
+.main-container .boxes {
+  padding: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.header .header-title {
+  color: #2ab2af;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.header .header-subtitle {
+  color: #c0df34;
+  font-size: 0.945rem;
+  line-height: 1.25rem;
+}
+
+.header .header-text {
+  color: #98a6bd;
+  line-height: 1.6rem;
+  font-size: 0.827rem;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  background-color: #2ab2af;
+  mix-blend-mode: multiply;
+  color: white;
+}
+
+.offer .offer-title {
+  padding-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.offer .offer-price {
+  display: flex;
+  column-gap: 12px;
+  font-size: 1.9rem;
+  padding-bottom: 7px;
+  font-weight: 700;
+}
+
+.offer .offer-price-text {
+  font-weight: 400;
+  color: #98a6bd;
+  font-size: 0.95rem;
+  align-self: center;
+  mix-blend-mode: screen;
+}
+
+.offer .offer-access {
+  padding-bottom: 30px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.offer .sign-up-button {
+  border-radius: 5px;
+  padding: 14px 0;
+  background-color: #c0df34;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 15px -8px black;
+}
+
+.offer .sign-up-button:active {
+  box-shadow: 0 0 1px 1px #c0df34;
+}
+
+.why-us {
+  display: flex;
+  flex-direction: column;
+  background-color: #2ab2af;
+  mix-blend-mode: normal;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.why-us .why-us-title {
+  font-size: 1.1rem;
+  padding-bottom: 15px;
+}
+
+.why-us .reasons {
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  color: #e5eff5;
+}
+
+footer {
+  text-align: center;
+  font-weight: 700;
+  padding: 25px;
+}
+
+@media screen and (min-width: 100px) {
+  * {
+    margin: 0 !important;
+  }
+  .main-container {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 100px 370px !important;
+  }
+  .main-container .boxes {
+    padding: 35px;
+  }
+  .header {
+    grid-area: 1/1/2/3;
+    padding: 40px 45px 0 !important;
+    justify-self: stretch;
+  }
+  .header .header-title {
+    color: #2ab2af;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+  .header .header-subtitle {
+    color: #c0df34;
+    font-size: 0.945rem;
+    line-height: 1.25rem;
+  }
+  .header .header-text {
+    color: #98a6bd;
+    line-height: 1.6rem;
+    font-size: 0.827rem;
+  }
+  footer {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
