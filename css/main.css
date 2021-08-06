@@ -2,6 +2,9 @@
   font-family: "Karla", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -20,7 +23,8 @@ body {
   flex-direction: column;
   margin: auto;
   box-shadow: 0 0 5px -3px black;
-  max-width: 320px;
+  max-width: 425px;
+  width: 86%;
 }
 
 .main-container .boxes {
@@ -101,7 +105,7 @@ body {
 }
 
 .offer .sign-up-button:active {
-  box-shadow: 0 0 1px 1px #c0df34;
+  box-shadow: 0 0 1px -1px #c0df34;
 }
 
 .why-us {
@@ -117,7 +121,11 @@ body {
   padding-bottom: 15px;
 }
 
-.why-us .reasons {
+.why-us .reasons-list {
+  list-style-type: none;
+}
+
+.why-us .reasons-list .reasons {
   font-size: 0.8rem;
   line-height: 1.25rem;
   color: #e5eff5;
@@ -126,6 +134,7 @@ body {
 footer {
   position: absolute;
   justify-self: center;
+  text-align: center;
   font-weight: 700;
   bottom: -60px;
 }

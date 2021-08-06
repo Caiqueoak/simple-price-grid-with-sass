@@ -1,6 +1,6 @@
 @import "variables";
 
-// MOBILE VERSION
+// MOBILE RESOLUTION
 
 body {
   position: relative;
@@ -18,7 +18,8 @@ body {
   flex-direction: column;
   margin: auto;
   box-shadow: 0 0 5px -3px black;
-  max-width: 320px;
+  max-width: 425px;
+  width: 86%;
 
   .boxes {
     padding: 25px;
@@ -94,7 +95,7 @@ body {
     box-shadow: 0 2px 15px -8px black;
 
     &:active {
-      box-shadow: 0 0 1px 1px $Bright-Yellow;
+      box-shadow: 0 0 1px -1px $Bright-Yellow;
     }
   }
 }
@@ -111,21 +112,26 @@ body {
     font-size: 1.1rem;
     padding-bottom: 15px;
   }
-  .reasons {
-    font-size: 0.8rem;
-    line-height: 1.25rem;
-    color: $Light-Gray;
+  .reasons-list {
+    list-style-type: none;
+
+    .reasons {
+      font-size: 0.8rem;
+      line-height: 1.25rem;
+      color: $Light-Gray;
+    }
   }
 }
 
 footer {
   position: absolute;
   justify-self: center;
+  text-align: center;
   font-weight: 700;
   bottom: -60px;
 }
 
-// DESKTOP VERSION
+// DESKTOP RESOLUTION
 
 @media screen and (min-width: 595px) {
   body {
