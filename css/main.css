@@ -15,6 +15,7 @@ body {
 }
 
 .main-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -123,10 +124,10 @@ body {
 }
 
 footer {
-  position: relative;
-  text-align: center;
+  position: absolute;
+  justify-self: center;
   font-weight: 700;
-  bottom: 30px;
+  bottom: -60px;
 }
 
 @media screen and (min-width: 595px) {
@@ -182,10 +183,6 @@ footer {
   }
   .why-us .reasons {
     font-size: 0.78rem;
-  }
-  footer {
-    position: absolute;
-    align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
