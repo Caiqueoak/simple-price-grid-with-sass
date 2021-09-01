@@ -86,16 +86,19 @@ body {
   }
 
   .sign-up-button {
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    width: 100%;
     border-radius: 5px;
     padding: 14px 0;
     background-color: $Bright-Yellow;
     color: white;
-    text-align: center;
-    text-decoration: none;
     box-shadow: 0 2px 15px -8px black;
 
-    &:active {
-      box-shadow: 0 0 1px -1px $Bright-Yellow;
+    &-text {
+      transition: all .3s;
     }
   }
 }
@@ -185,6 +188,10 @@ footer {
       .sign-up-button-text {
         font-size: 1.1rem;
       }
+    }
+    .sign-up-button:active {
+      transition: all 0.3s;
+      width: 95%;
     }
   }
 
